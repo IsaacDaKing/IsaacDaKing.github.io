@@ -4,30 +4,71 @@
   <head>
     <meta charset="UTF-8">
     <title> Fingerprints </title>
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="../../mystyle.css">
   </head>
-  <body>
-    <a href= "/users/isaac-pandyan/Digital\ Portfolio/index.html"> Back to Homepage </a>
-    <h1>Fingerprints</h1>
+    <ul>
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="AboutMe.html">About Me</a> </li>
+      <li class="dropdown">
+	<a href="javascript:void(0)" class="dropbtn">Essays</a>
+	<div class="dropdown-content">
+	  <a href="CS-II/Essays/Fingerprints.html">Fingerprints</a>
+	  <a href="AI%20Sentience.html">AI Sentience</a>
+	  <a href="#">Link 3</a>
+	</div>
+      </li>
+      <li> <a href="https://isaacdaking.github.io"> My Github Page </a></li>
+    </ul>
+
+	<h2> Fingerprints Essay </h2>
+	<br>
+	Isaac Pandyan
+	<br>
+	<br>
+	Allen High School STEAM Campus
+	<br>
+	<br>
+	Advanced Computer Science II
+	<br>
+	<br>
+	Mr. Ben-Yaakov
+	<br>
+	<br>
+	September 20th
+	<br>
+	<br>
+  
     <p>
+      <b> HTTPS connection and Proxy Appliance </b>
+      <br>
       The primary purposes of an HTTPS connection are to provide both privacy and security for the user through encryption. However, with so much privacy and security, authorities such as schools, employers, and the government started to take issue, and this is where the HTTPS Proxy Appliance becomes important. The HTTPS Proxy Appliance is used by the aforementioned authorities as a way to decrypt and log all data sent out by the user <i>AND</i>  is capable of instantly spoofing whatever website the user is trying to connect to. It does this by being already downloaded into the user’s browser or computer and essentially acting as a middleman between the user and whatever host they are trying to connect to.
       <br>
       <br>
+      <b> Man-In-The-Middle & Certificate Authorities </b>
+      <br>
       MITM or Man-In-The-Middle is a type of cyberattack in which a third party intercepts data that the victim and legitimate host are sending each other. There are various ways to do this (SSL stripping etc), but when someone does this, you can lose the safety of your login credentials and other sensitive information. There is also a concept of “CA”, which stands for Certificate Authority. Websites prove their identities to these CA’s through real world documentation. When the CA believes the website is authentic, they digitally sign the website’s security certificate, placing their reputation on the line and vouching that the site is authentic. 
+      <br>
+      <br>
+      <b> SSL Interception, Cryptographic Hashes, and False Positives </b>
       <br>
       <br>
       However, despite Certificate Authorities, SSL interception is a very real threat that people are almost always in danger of. SSL interception cannot be prevented but it can be detected. This is because when SSL interception is occurring, the public key will be different from the authentic public key. Anyone looking at a SSL certificate can make a <i>cryptographic hash</i> of the certificate, this is essentially an extremely complicated algorithm that guaruntees authenticity and uniqueness. A good hash is impossible to fake. There is also an additional threat in cyber-security of false positives and false negatives. A false positive is when a positive is detected, however, in actuality, it is a negative. A false negative is when a negative is detected, however, in actuality, it is a positive. When applied to cyber-security, a false positive is when a threat is detected but there isn’t one, and a false negative is when no threat is detected but there is one.
       <br>
       <br>
+      <b> Do they have a right to do all of this? </b>
+      <br>
+      <br>
       No one, not your school, ISP, or government, has the right to eavesdrop on someone’s private communications without a warrant or, in regards to a minor, parental permission. Everyone has the right to privacy, even when it’s inconvenient to authorities. It is important to have a judge actually look at the authority’s case and decide if it’s frivolous or not. ISP’s can continue to run scanners that simply reverse image search downloads to see if they match any illegal pictures in their government issued databases, and if you are in some sort of group chat, in which multiple people send and receive messages, and one person consents to having their phone looked at(/has a warrant demanding that the data be looked at), then the government can still look at the data (without any permission from the others in the group chat). In addition, seeing as most people in school are minors, all the school needs is the parents permission. However, this can't be signed away on a general basis, because then the parents have no clue exactly what they are consenting to being showed. It has to be signed away after something has raised some red flags that are worth investigating. Law enforcement seems absolutely obsessed with trying to find a way to pry into the individual's life without getting judicial permission. This shows a vital system of the nation that is almost inherently diammetrically opposed to the consititutional guarantees that define the nation. It's important to ask yourself why groups that supposedly carry out justice are so obsessed with doing things without oversight <a href="https://irp.fas.org/eprint/psp.pdf">(PSP/STELLARWIND for example)</a>
       <br>
       <br>
-      <img src="https://i.postimg.cc/nz2fj8MC/Fingerprints.png">
+      <img src="https://i.postimg.cc/nz2fj8MC/Fingerprints.png" alt="Flowchart">
+      <br>
+	<b> References </b>
+      <br>
       <br>
       Swinhoe, D. (2022, March 25). Man-in-the-middle (MITM) attack definition and examples. CSO Online. Retrieved August 25, 2022, from https://www.csoonline.com/article/3340117/man-in-the-middle-attack-definition-and-examples.html
       <br>
       <br>
       Steve Gibson, G. I. B. S. O. N. R. E. S. E. A. R. C. H. C. O. R. P. O. R. A. T. I. O. N. (n.d.). GRC : SSL TLS HTTPS web server certificate fingerprints . GRC | SSL TLS HTTPS Web Server Certificate Fingerprints . Retrieved August 25, 2022, from https://www.grc.com/fingerprints.htm#top
-    </p>
-  </body>
+</body>
 </html>
