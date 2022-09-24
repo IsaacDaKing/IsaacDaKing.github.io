@@ -11,7 +11,7 @@ h1 {
 }
 
 p {
-    margin: 0px 100px 50px 100px;   
+    margin: 0px 300px 50px 300px;   
     font-family: Georgia, Garamond, Serif;
     font-size: 20px; 
 }
@@ -66,11 +66,12 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 .center {
-    text-align: center;
-    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .centertxt{
-    text-align:center;
+    text-align: center;
 }
