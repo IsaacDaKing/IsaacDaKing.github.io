@@ -16,6 +16,12 @@ p {
     font-size: 20px; 
 }
 
+dl {
+    margin: 0px 300px 50px 300px;
+    font-family: Georgia, Garamond, Serif;
+    font-size: 20px;
+}
+
 ul {
     list-style-type: none;
     margin: -7px -4px -7px 0px;
@@ -74,4 +80,13 @@ li.dropdown {
 
 .centertxt{
     text-align: center;
+}
+
+.demopara {
+    line-height: 2 ;
+}
+
+.hangingindent {
+    padding-left: 22px ;
+    text-indent: -22px ;
 }
