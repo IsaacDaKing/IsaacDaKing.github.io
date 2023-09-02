@@ -38,25 +38,25 @@
           <b>Quick Sort</b>
     <br>
     <br>
-ayab
+Quick Sort, much like Merge Sort, relies on the division of the input array, but Quick Sort's methodology is much different. Quick Sort utilizes a "pivot partition" strategy to divide the input array. The sorting algorithm starts by selecting a "pivot element" from the input array. After this, the sorting algorthim enters the partitioning phase and fills the left side of the pivot element with elements less than the pivot (creating a new sub-array) and fills the right side of the pivot with elements greater than the pivot (creating another new sub-array). From there, the sorting algorithm recursively applies itself to the newly created sub-arrays on either side of the pivot until the array elements are correctly ordered. 
     <br>
       <br>
-      <b>Time Complexity</b>
+      <b>Time Complexity</b> Quick Sort is efficient with one of the best average time complexities of O(<i>n</i> log <i>n</i>). However, the case-by-case efficiency of Quick Sort is heavily reliant on what element is chosen as the pivot (for each individual recursive application). Due to this, Quick Sort has a worst case time complexity of O(<i>n</i>^2), meaning it lacks the consistent stability of Merge Sort.
       <br>
       <br>
-      <b>Space Complexity</b> 
+      <b>Space Complexity</b> Quick sort has efficient Space Complexity of O(log<i>n</i>), which makes Quick Sort a good choice in situations of constrained space.
       <br>
       <br>
       <br>
-          <b>Quick Sort</b>
+          <b>Heap Sort</b>
     <br>
     <br>
-ayab
+The Heap Sort algorithm consists of two parts, heap construction and maximum element extraction. The first part in which the heap is  placed in an array with the layout of a "complete binary tree". The "complete binary tree" maps the "binary tree structure" into the array indices; each array index represents a node. In the second part, a sorted array is created by repeatedly removing the largest element from the heap (the root of the heap), and inserting it into the array. The heap is updated after each removal to maintain the heap. Once all objects have been removed from the heap, the result is a sorted array. (Transparency: a lot of google was utilized for this explanation)
     <br>
       <br>
-      <b>Time Complexity</b>
+      <b>Time Complexity</b> Heap sort has the advantage of a consistent and stable time complexity of O(<i>n</i> log <i>n</i>). This can help when the dataset is large and the process effiency needs to be consistent and stable.
       <br>
       <br>
-      <b>Space Complexity</b>
+      <b>Space Complexity</b> Heap Sort is what's defined as an "in-place" algorithm, meaning that it doesn't utilize an extraneous data structure. Therefore, its space complexity is O(1), meaning the amount of memory used is constant  regardless of the data its processing.
     </p>
           </body>
