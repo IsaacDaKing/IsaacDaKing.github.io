@@ -1,42 +1,123 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title> Template</title>
-    <link rel="stylesheet" href="mystyle.css">
-    <ul>
-      <li><a href="../Digital Portfolio/index.html">Home</a></li>
-      <li><a href="AboutMe.html">About Me</a> </li>
-      <li class="dropdown">
-	<a href="javascript:void(0)" class="dropbtn">Essays</a>
-	<div class="dropdown-content">
-	  <a href="CS-II/Essays/Fingerprints.html">Fingerprints</a>
-	  <a href="CS-II/Essays/AI%20Sentience.html">AI Sentience</a>
-	  <a href="#">Link 3</a>
-	</div>
-      </li>
-      <li> <a href="https://isaacdaking.github.io"> My Github Page </a></li>
-    </ul>
-  </head>
-  <body>
-    <h1>Isaac's Homepage</h1>
-    <p>
-      Welcome!
-      <br>
-      <a href= "AboutMe.html">  All About Me </a>
-      <br>
-      <a href= "ImportantToMe.html"> Why my Digital Portfolio is important to me</a>
-      <br>
-      <a href= "2021-2022ISP.html"> My 2021-2022 Computer Science ISP</a>
-      <br>
-      <a href= "Classes.html"> My Classes </a>
-      <br>
-      <a href="CS-II/Essays/Fingerprints.html"> Fingerprints </a>
-      <br>
-      <a href="CS-II/Essays/AI%20Sentience.html"> AI Sentience </a>
-      <br>
-      <a href= "isaacdaking.github.io"> My Work can be found here</a>
-      <br>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Isaac's Homepage</title>
+  <link rel="stylesheet" href="mystyle.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+      text-align: center;
+    }
 
-    </p>
-          </body>
+    /* Navigation Bar */
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+    }
+
+    li {
+      position: relative;
+    }
+
+    li a, .dropbtn {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    li a:hover, .dropdown:hover .dropbtn {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Dropdown */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background: rgba(0, 0, 0, 0.9);
+      min-width: 160px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: #fff;
+      padding: 12px 16px;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Main Content */
+    h1 {
+      margin-top: 50px;
+      font-size: 3em;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    }
+
+    p {
+      margin-top: 30px;
+      font-size: 1.2em;
+      line-height: 1.8;
+    }
+
+    p a {
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    p a:hover {
+      color: #ffd966;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <ul>
+    <li><a href="../Digital Portfolio/index.html">Home</a></li>
+    <li><a href="AboutMe.html">About Me</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Essays</a>
+      <div class="dropdown-content">
+        <a href="CS-II/Essays/Fingerprints.html">Fingerprints</a>
+        <a href="CS-II/Essays/AI%20Sentience.html">AI Sentience</a>
+        <a href="#">Link 3</a>
+      </div>
+    </li>
+    <li><a href="https://isaacdaking.github.io">My Github Page</a></li>
+  </ul>
+
+  <!-- Page Content -->
+  <h1>Isaac's Homepage</h1>
+  <p>
+    Welcome!
+    <br>
+    <a href="AboutMe.html">All About Me</a><br>
+    <a href="ImportantToMe.html">Why my Digital Portfolio is important to me</a><br>
+    <a href="2021-2022ISP.html">My 2021-2022 Computer Science ISP</a><br>
+    <a href="Classes.html">My Classes</a><br>
+    <a href="CS-II/Essays/Fingerprints.html">Fingerprints</a><br>
+    <a href="CS-II/Essays/AI%20Sentience.html">AI Sentience</a><br>
+    <a href="https://isaacdaking.github.io">My Work can be found here</a><br>
+  </p>
+</body>
+</html>
